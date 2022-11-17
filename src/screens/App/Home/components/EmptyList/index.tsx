@@ -10,6 +10,7 @@ import Svg from 'atoms/Svg';
 import TextView from 'atoms/TextView';
 import {useLoadingSelector} from 'redux/selectors';
 import Article from 'redux/article';
+import COLORS from 'values/colors';
 
 const EmptyList = () => {
   const isLoading = useLoadingSelector(Article.thunks.doGetArticles);
@@ -27,7 +28,7 @@ const EmptyList = () => {
           <Svg name="empty" size={Dimensions.get('window').width * 0.8} />
           <TextView
             title="No Articles are found"
-            style={{marginTop: 15, fontSize: 17}}
+            style={{marginTop: 15, fontSize: 17, color: COLORS.black}}
           />
         </>
       )}

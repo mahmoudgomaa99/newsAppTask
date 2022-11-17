@@ -4,5 +4,5 @@ import {MarginsAndPaddings} from 'values/Dimensions';
 
 export const styles = StyleSheet.create({
   switchContainer: {flexDirection: 'row', alignItems: 'center', margin: 8},
-  language: {marginRight: 8, fontSize: 15},
+  language: {marginRight: 8, fontSize: 15, color: COLORS.black},
 });
